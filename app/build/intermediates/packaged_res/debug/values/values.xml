@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF9800</color>
+    <color name="black">#000000</color>
+    <color name="card_redondo_activo">#4CAF50</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="error">#F44336</color>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="success">#4CAF50</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="warning">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">TLG Transporte</string>
+    <string name="email_hint">Email</string>
+    <string name="emit_ticket">Emitir Boleta</string>
+    <string name="error_generic">Ocurrió un error</string>
+    <string name="error_no_connection">Sin conexión a internet</string>
+    <string name="error_server">Error del servidor</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="login_error">Error al iniciar sesión</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="no_active_redondo">No hay redondo activo</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="select_tarifa">Seleccione una tarifa</string>
+    <string name="sync_complete">Sincronización completada</string>
+    <string name="sync_data">Sincronizar Datos</string>
+    <string name="sync_error">Error al sincronizar</string>
+    <string name="syncing">Sincronizando...</string>
+    <string name="ticket_created">Boleta creada exitosamente</string>
+    <style name="Theme.TLGTransporte" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+    <style name="Theme.TLGTransporte.Splash" parent="Theme.TLGTransporte">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

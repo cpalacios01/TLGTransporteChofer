@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Colores de la aplicación
+    Path: app/src/main/res/values/colors.xml
+    Última modificación: 2026-02-06 13:30
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<resources>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FFC107</color>
+    <color name="accent_dark">#FFA000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+</resources>

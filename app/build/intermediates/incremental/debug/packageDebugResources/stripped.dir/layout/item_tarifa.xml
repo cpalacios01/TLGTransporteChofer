@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Item de tarifa para RecyclerView
+    Path: app/src/main/res/layout/item_tarifa.xml
+    Última modificación: 2026-02-05 15:10
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombreTarifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarifa Normal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvDescripcionTarifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasaje estándar"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMontoTarifa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₲ 2,500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

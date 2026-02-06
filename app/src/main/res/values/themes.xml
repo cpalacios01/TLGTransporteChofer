@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Temas de la aplicación
+    Path: app/src/main/res/values/themes.xml
+    Última modificación: 2026-02-06 13:30
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<resources>
+    <!-- Tema Base -->
+    <style name="Theme.TLGTransporte" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+
+    <!-- Tema Splash (sin ActionBar) -->
+    <style name="Theme.TLGTransporte.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+</resources>

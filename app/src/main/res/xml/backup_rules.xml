@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Reglas de respaldo
+    Path: app/src/main/res/xml/backup_rules.xml
+    Última modificación: 2026-02-06 13:30
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<full-backup-content>
+    <include domain="sharedpref" path="."/>
+    <include domain="database" path="."/>
+</full-backup-content>

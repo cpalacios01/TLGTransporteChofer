@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings de la aplicación
+    Path: app/src/main/res/values/strings.xml
+    Última modificación: 2026-02-06 13:30
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<resources>
+    <string name="app_name">TLG Transporte</string>
+
+    <!-- Login -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_error">Credenciales incorrectas</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_redondo_activo">Redondo Activo</string>
+    <string name="dashboard_no_redondo">No hay redondo activo</string>
+    <string name="dashboard_iniciar_redondo">Iniciar Redondo</string>
+    <string name="dashboard_emitir_boleta">Emitir Boleta</string>
+    <string name="dashboard_registrar_gasto">Registrar Gasto</string>
+    <string name="dashboard_cerrar_redondo">Cerrar Redondo</string>
+
+    <!-- Boletas -->
+    <string name="boleta_title">Emisión de Boleta</string>
+    <string name="boleta_tarifa">Tarifa</string>
+    <string name="boleta_emitir">Emitir</string>
+    <string name="boleta_success">Boleta emitida correctamente</string>
+
+    <!-- Gastos -->
+    <string name="gasto_title">Registrar Gasto</string>
+    <string name="gasto_concepto">Concepto</string>
+    <string name="gasto_monto">Monto</string>
+    <string name="gasto_registrar">Registrar</string>
+
+    <!-- Común -->
+    <string name="error_network">Error de conexión</string>
+    <string name="loading">Cargando…</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+</resources>

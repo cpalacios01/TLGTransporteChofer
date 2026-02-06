@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.tlg.transporte.chofer.app-mergeReleaseResources-48:/layout/activity_splash.xml",
+        "source": "com.tlg.transporte.chofer.app-main-50:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-mergeReleaseResources-48:/layout/item_tarifa.xml",
+        "source": "com.tlg.transporte.chofer.app-main-50:/layout/item_tarifa.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-mergeReleaseResources-48:/layout/activity_boleta.xml",
+        "source": "com.tlg.transporte.chofer.app-main-50:/layout/activity_boleta.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-mergeReleaseResources-48:/layout/activity_dashboard.xml",
+        "source": "com.tlg.transporte.chofer.app-main-50:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-mergeReleaseResources-48:/layout/activity_login.xml",
+        "source": "com.tlg.transporte.chofer.app-main-50:/layout/activity_login.xml"
+    }
+]

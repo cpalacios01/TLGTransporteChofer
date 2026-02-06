@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Manifest de aplicación TLG Transporte Chofer
+    Path: app/src/main/AndroidManifest.xml
+    Última modificación: 2026-02-05 14:30
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TLGTransporte"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TLGTransporte.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Dashboard Principal -->
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <!-- Emisión de Boletas -->
+        <activity
+            android:name=".ui.boleta.BoletaActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <!-- Gestión de Redondo -->
+        <activity
+            android:name=".ui.redondo.RedondoActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <!-- Registro de Gastos -->
+        <activity
+            android:name=".ui.gastos.GastoActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.redondo.RedondoActivity" />
+
+    </application>
+
+</manifest>

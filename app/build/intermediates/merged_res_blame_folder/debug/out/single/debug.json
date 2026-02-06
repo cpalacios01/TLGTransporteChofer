@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_visibility.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_visibility.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/xml_backup_rules.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/layout_activity_dashboard.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_sync.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_sync.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/layout_activity_login.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/xml_data_extraction_rules.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_lock.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/layout_item_tarifa.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/layout/item_tarifa.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/layout_activity_splash.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_receipt.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_receipt.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/layout_activity_boleta.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/layout/activity_boleta.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_bus.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_bus.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_logout.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.tlg.transporte.chofer.app-merged_res-49:/drawable_ic_email.xml.flat",
+        "source": "com.tlg.transporte.chofer.app-main-51:/drawable/ic_email.xml"
+    }
+]

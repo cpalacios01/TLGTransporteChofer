@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout de Dashboard Principal
+    Path: app/src/main/res/layout/activity_dashboard.xml
+    Última modificación: 2026-02-05 15:10
+    Dev: cpalacios01@gmail.com | +595994648273
+-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:titleTextColor="@android:color/white"
+            app:title="TLG Transporte">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnSync"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_sync"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Sincronizar"
+                    android:tint="@android:color/white"/>
+
+                <ImageButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_logout"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Cerrar sesión"
+                    android:tint="@android:color/white"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Usuario Info -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chofer: Cargando..."
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Redondo Activo -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRedondo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/card_redondo_activo">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Redondo Activo"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:id="@+id/tvCodigoRedondo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Código: RDO-20260205-001"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tvEstadoRedondo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estado: Abierto"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Sin Redondo -->
+                <TextView
+                    android:id="@+id/tvNoRedondo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No hay redondo activo"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAlignment="center"
+                    android:padding="32dp"
+                    android:visibility="visible"/>
+
+                <!-- Botón Emitir Boleta -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEmitirBoleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Emitir Boleta"
+                    android:textSize="18sp"
+                    android:enabled="false"
+                    app:icon="@drawable/ic_receipt"
+                    app:iconGravity="textStart"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
