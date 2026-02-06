@@ -46,15 +46,17 @@ class BoletaActivity : AppCompatActivity() {
             return
         }
         
+        setSupportActionBar(binding.toolbar)
+
         setupViews()
         observeData()
-        
+
         boletaViewModel.loadBoletas(redondoLocalId)
     }
-    
+
     private fun setupViews() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        title = "Emitir Boleta"
+        supportActionBar?.title = "Emitir Boleta"
         
         tarifaAdapter = TarifaAdapter { tarifa ->
             boletaViewModel.createBoleta(

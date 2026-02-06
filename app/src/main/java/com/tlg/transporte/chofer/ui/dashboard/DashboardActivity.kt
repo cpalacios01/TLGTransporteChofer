@@ -33,10 +33,12 @@ class DashboardActivity : AppCompatActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         
+        setSupportActionBar(binding.toolbar)
+
         setupViews()
         observeData()
     }
-    
+
     private fun setupViews() {
         binding.btnEmitirBoleta.setOnClickListener {
             viewModel.redondoActivo.value?.let { redondo ->

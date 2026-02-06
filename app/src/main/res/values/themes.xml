@@ -7,7 +7,7 @@
 -->
 <resources>
     <!-- Tema Base -->
-    <style name="Theme.TLGTransporte" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.TLGTransporte" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryVariant">@color/primary_dark</item>
         <item name="colorOnPrimary">@color/white</item>
